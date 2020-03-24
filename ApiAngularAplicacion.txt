@@ -1,0 +1,24 @@
+/*aplicacion con api de angular esto es la aplicacion*/
+
+
+/*variable principal que almacenara el array del api*/
+    $rootScope.youtube = [];
+
+/*funcion de http para la localizacion del api*/
+    $http({
+	/*metodo y url del api*/
+        method : "GET",
+        url : "url"
+    }).then((response) => {
+	/*llamada a consumir el api en array*/
+        $rootScope.youtube.push(response);
+        /*llamada para impirmir*/
+	console.log(response);
+    });
+
+
+/*este codigo es para la aplicacion de apis*/
+
+el api de aplicacion solo funciona si el url funciona al 100% con las variables necesarias 
+
+
